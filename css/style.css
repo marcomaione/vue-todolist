@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: beige;
+}
+
+.container {
+    width: 100%;
+    margin-top: 50px;
+    height: 100vh;
+    background-color: beige;
+    
+}
+
+h2 {
+    text-align: center;
+    margin: 30px;
+}
+
+.center {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.center button {
+
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+
+.list {
+    width: 50%;
+    margin: 30px auto;
+    
+}
+
+.list ul {
+    background-color: lightseagreen;
+    list-style: none;
+    
+}
+
+.list ul li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.list ul li:hover {
+    background-color: rgb(63, 209, 209);
+
+}
+
+.fa-xmark {
+    float: right;
+    margin-right: 5px;
+}
