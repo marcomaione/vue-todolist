@@ -62,3 +62,11 @@ h2 {
     float: right;
     margin-right: 5px;
 }
+
+.strike-through {
+    text-decoration: line-through;
+}
+
+.text-none {
+    text-decoration: none;
+}

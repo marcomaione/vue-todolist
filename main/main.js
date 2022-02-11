@@ -13,9 +13,15 @@ const root = new Vue (
             addTodo() {
                 this.todos.push(this.newtodo);
                 this.newtodo = '';
+            },
+            removeTodo(index) {
+                this.todos.splice(index, 1);
+            },
+            check(index) {
+                this.todos(index).done = !this.todos(index).done
             }
 
-        },
+        }
     }
 
 

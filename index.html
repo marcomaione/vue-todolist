@@ -13,14 +13,14 @@
     <div class="container" id="app">
         <h2>Cosa vuoi fare?</h3>
         <div class="center">
-            <input type="text" v-model="newtodo">
+            <input v-on:keyup.enter="addTodo" type="text" v-model="newtodo">
             <button @click="addTodo">Enter</button>
         </div>
         <div class="list">
             <ul>
-                <li v-for="todo in todos">
-                    {{todo}}
-                    <i class="fa-solid fa-xmark"></i>
+                <li v-for="(todo, indice) in todos">
+                    <p @check="check(index)" :class="todo.done == true? 'strike-through' : 'text-none'">{{todos}}</p>
+                    <i @click="removeTodo(indice)" class="fa-solid fa-xmark"></i>
                 </li>
             </ul>
         </div>
