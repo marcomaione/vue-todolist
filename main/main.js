@@ -6,7 +6,16 @@ const root = new Vue (
         el:'#app',
         data: {
             newtodo:'',
-            todos: ['ciao'],
+            todos: [
+                {
+                    testo:'correre',
+                    line:true
+                },
+                {
+                    testo: 'mangiare',
+                    line:false
+                },
+            ],
         },
         methods: {
             addTodo() {
@@ -17,7 +26,7 @@ const root = new Vue (
                 this.todos.splice(index, 1);
             },
             check(index) {
-                this.todos[index].done = !this.todos[index].done
+                this.todos[index].line = !this.todos[index].line
             }
 
         }
