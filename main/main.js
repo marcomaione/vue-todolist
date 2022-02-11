@@ -9,7 +9,7 @@ const root = new Vue (
             todos: [
                 {
                     testo:'correre',
-                    line:true
+                    line:false
                 },
                 {
                     testo: 'mangiare',
@@ -26,8 +26,8 @@ const root = new Vue (
                 this.todos.splice(index, 1);
             },
             check(index) {
-                this.todos[index].line = !this.todos[index].line
-            }
+                this.todos[index].line = !this.testo[index].line
+            },
 
         }
     }
