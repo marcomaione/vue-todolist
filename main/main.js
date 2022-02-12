@@ -7,35 +7,49 @@ const root = new Vue (
         data: {
             newtodo:'',
             todos: [
+
                 {
                     testo:'correre',
-                    line:false
+                    line:false,
+
                 },
                 {
-                    testo: 'mangiare',
-                    line:false
+                    testo:'mangiare',
+                    line:false,
+                   
+
+                },
+                {
+                    testo:'lavorare',
+                    line:false,
+
+                },
+                {
+                    testo:'dormire',
+                    line:false,
+
                 },
             ],
+        
         },
         methods: {
             addTodo() {
-                this.todos.push(this.newtodo);
+                this.todos.push({
+                    testo:this.newtodo,
+                    line:false,
+                });
                 this.newtodo = '';
             },
             removeTodo(index) {
                 this.todos.splice(index, 1);
+            
             },
             check(index) {
-                this.todos[index].line = !this.testo[index].line
+                this.todos[index].line = !this.todos[index].line
+    
             },
 
-        }
+        },
     }
-
-
-
-
-
-
 
 );

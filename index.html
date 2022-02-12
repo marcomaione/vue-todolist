@@ -18,9 +18,9 @@
         </div>
         <div class="list">
             <ul>
-                <li v-for="(todo, indice) in todos">
-                    <span @click="check(index)" :class="todo.line == true? 'strike-through' : 'text-none' ">{{todo.testo}}</span>
-                    <i @click="removeTodo(indice)" class="fa-solid fa-xmark"></i>
+                <li v-for="(todo,index) in todos">
+                    <span @click="check(index)" :class=" todo.line == true ? 'strike-through' : 'text-none' ">{{todo.testo}}</span>
+                    <i @click="removeTodo(index)" class="fa-solid fa-xmark"></i>
                 </li>
             </ul>
         </div>
